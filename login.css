@@ -1,0 +1,110 @@
+/* Background dengan motif islami halus */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1E88E5, #43A047);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Overlay motif islami samar */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://www.toptal.com/designers/subtlepatterns/uploads/moroccan-flower.png') repeat;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* Card login */
+.card {
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid #198754; /* hijau islami */
+    background: #ffffff;
+    overflow: hidden;
+}
+
+/* Judul */
+.card-title {
+    color: #198754;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Tambah garis hias di bawah judul */
+.card-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #198754, #0d6efd); /* hijau → biru */
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* Input */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #d0d7de;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd; /* biru aksen */
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.3);
+}
+
+/* Tombol login */
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #198754);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0b5ed7, #157347);
+    transform: translateY(-2px);
+}
+
+/* Pesan error / sukses */
+.alert {
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+}
+
+/* Logo YDSF pojok kanan atas halaman */
+.page-logo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background: #fff; /* supaya tidak tenggelam di gradien */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+  padding: 8px;
+  z-index: 999; /* pastikan di atas semua elemen lain */
+}
+
+.page-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

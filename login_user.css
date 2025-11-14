@@ -1,0 +1,108 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* gradiasi abstrak dengan radial gradient */
+  background: radial-gradient(circle at 20% 30%, #198754, transparent 40%),
+              radial-gradient(circle at 80% 70%, #0d6efd, transparent 40%),
+              radial-gradient(circle at 50% 50%, #2ecc71, transparent 50%),
+              #428eff; /* warna dasar */
+
+  background-size: 200% 200%;
+  animation: abstractBG 20s ease-in-out infinite;
+  overflow: hidden;
+}
+
+/* Animasi posisi gradien */
+@keyframes abstractBG {
+  0% {
+    background-position: 0% 0%, 100% 100%, 50% 50%;
+  }
+  33% {
+    background-position: 100% 0%, 0% 100%, 50% 50%;
+  }
+  66% {
+    background-position: 0% 100%, 100% 0%, 50% 50%;
+  }
+  100% {
+    background-position: 0% 0%, 100% 100%, 50% 50%;
+  }
+}
+
+/* Animasi gradien bergerak */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Card Login */
+.login-card {
+  border-radius: 16px;
+  border: 2px solid #d4edda;
+  background: #ffffff;
+  position: relative;
+}
+
+.login-card input {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.login-card button {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px;
+  background: linear-gradient(135deg, #198754, #2ecc71);
+  border: none;
+}
+
+.login-card button:hover {
+  background: linear-gradient(135deg, #157347, #27ae60);
+}
+
+/* Ornamen Islami */
+.ornament {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url('/tabungan_qurban/assets/img/ornament.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.15;
+  z-index: 0;
+}
+.top-left { top: 20px; left: 20px; }
+.top-right { top: 20px; right: 20px; transform: scaleX(-1); }
+.bottom-left { bottom: 20px; left: 20px; transform: scaleY(-1); }
+.bottom-right { bottom: 20px; right: 20px; transform: scale(-1); }
+
+.login-header {
+  text-align: center;
+}
+.login-header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gambar {
+  width: 130px !important;
+  height: 130px !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: #198754;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}

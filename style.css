@@ -1,0 +1,6 @@
+body {
+  background: #f7fafc;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+.card { border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.04); }
+.navbar-brand { font-weight: 700; }

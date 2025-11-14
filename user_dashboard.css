@@ -1,0 +1,199 @@
+/* ===== Base ===== */
+body {
+    background: linear-gradient(135deg, #009272 0%, #0078b5 100%) fixed;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Motif islami tipis di background */
+body::before {
+    content: "";
+    position: fixed;
+    top:0;left:0;width:100%;height:100%;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events:none;
+    z-index:-1;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background: linear-gradient(90deg, #009272 0%, #0078b5 100%) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 0 0 8px 8px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link {
+    color: #e0f4ff !important;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+
+/* ===== Card ===== */
+.card {
+    background: #f8fdfb;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Card header text tweak */
+.card h4, .card h5 {
+    color: #008c72;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Progress Bar ===== */
+.progress {
+    background: #e0f2f1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #00b894, #00c197);
+    background-size: 40px 40px;
+    animation: progress-stripes 2s linear infinite;
+    font-weight: 600;
+    color: #fff;
+}
+
+@keyframes progress-stripes {
+    0% {background-position: 40px 0;}
+    100% {background-position: 0 0;}
+}
+
+/* ===== Buttons ===== */
+.btn-success {
+    background: linear-gradient(90deg,#009846,#00b894);
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0,146,112,0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-success:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 4px 12px rgba(0,146,112,0.4);
+}
+
+/* ===== Table ===== */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background: #e6f4f1;
+    color: #008c72;
+    font-weight: 600;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0,146,112,0.08);
+    transition: background 0.2s ease;
+}
+
+/* Badge styling for jenis transaksi */
+.badge.bg-success {
+    background: #009846 !important;
+}
+
+.badge.bg-danger {
+    background: #e53935 !important;
+}
+
+/* ===== Modern Enhancement Layer ===== */
+
+/* --- Card Modern Effect --- */
+.card {
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Progress Bar Enhancement --- */
+.progress {
+  height: 25px;
+  border-radius: 1rem;
+}
+.progress-bar {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* --- List Group / Notifikasi Styling --- */
+.list-group-item {
+  border: none;
+  border-left: 4px solid #009272;
+  background: #f8fdfb;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+.list-group-item:hover {
+  transform: translateX(5px);
+  background: #e8f8f4;
+}
+.list-group-item strong {
+  color: #009272;
+}
+
+/* --- Table Enhancement --- */
+.table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 146, 112, 0.03);
+}
+.table thead th {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+/* --- Status Badge Styling --- */
+.badge {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+/* --- Dashboard Typography --- */
+h4, h5, h6 {
+  font-weight: 600;
+  color: #006b5b;
+}
+.text-muted {
+  font-size: 0.9rem;
+}
+
+/* --- Button Animation --- */
+.btn-success {
+  transition: all 0.25s ease-in-out;
+}
+.btn-success:active {
+  transform: scale(0.96);
+}
+
+/* --- Section spacing --- */
+.container, .card-body {
+  scroll-behavior: smooth;
+}
+
+

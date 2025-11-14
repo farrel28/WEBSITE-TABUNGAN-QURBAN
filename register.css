@@ -1,0 +1,139 @@
+body {
+  background: linear-gradient(135deg, #f5f3e7 0%, #e8f2ea 100%);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Card utama */
+.card {
+  background: #fff;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Header card */
+.card-title {
+  font-weight: 600;
+  color: #1e7b36;
+  text-align: center;
+  border-bottom: 2px solid #e1f1e4;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Label form */
+.form-label {
+  font-weight: 500;
+  color: #2d5c33;
+}
+
+/* Input dan select */
+.form-control,
+.form-select {
+  border: 1px solid #c9d8cc;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #1e7b36;
+  box-shadow: 0 0 0 3px rgba(30, 123, 54, 0.15);
+  outline: none;
+}
+
+/* Tombol utama */
+.btn-primary {
+  background-color: #1e7b36;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #269944;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(30, 123, 54, 0.2);
+}
+
+/* Alert */
+.alert {
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.alert-danger {
+  background-color: #ffeaea;
+  color: #b02a2a;
+  border: 1px solid #f5c2c7;
+}
+
+.alert-success {
+  background-color: #e9f7ef;
+  color: #1e7b36;
+  border: 1px solid #cce5cc;
+}
+
+/* Animasi muncul form */
+.card-body {
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    margin: 15px;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+/* Tambahan hiasan lembut di background */
+body::before {
+  content: "";
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(30,123,54,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(231,206,149,0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
