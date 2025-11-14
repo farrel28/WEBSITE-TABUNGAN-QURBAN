@@ -6,3 +6,5 @@ cron/README.md
 databases/README.md
 inc/README.md
 pages/README.md
+assets/css/README.md
+assets/css/README.md
